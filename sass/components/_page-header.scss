@@ -1,0 +1,83 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  position: relative;
+  &__navigation {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  &__item {
+    margin-right: 50px;
+    &--active::after {
+      content: "";
+      width: 53px;
+      height: 4px;
+      background: #2196f3;
+      border-radius: 2px;
+      position: absolute;
+      bottom: 0;
+      display: block;
+    }
+  }
+  &__link {
+    color: $primaryColor;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: $brandColor;
+      transition-duration: $transitionDuration;
+      transition-timing-function: $transitionTimingFunction;
+    }
+  }
+  &__contact {
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    justify-content: space-between;
+    display: flex;
+  }
+  &__contact-item {
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    justify-content: space-between;
+    color: $secondaryColor;
+    text-decoration: none;
+    margin: 0px 50px;
+    padding: 10px;
+    &:focus,
+    &:hover {
+      color: $brandColor;
+      transition-duration: $transitionDuration;
+      transition-timing-function: $transitionTimingFunction;
+    }
+    &:focus,
+    &:hover .page-header__contact-icon {
+      fill: $brandColor;
+      transition-duration: $transitionDuration;
+      transition-timing-function: $transitionTimingFunction;
+    }
+  }
+  &__contact-icon {
+    width: 16px;
+    height: 12px;
+    fill: $secondaryColor;
+    margin-right: 10px;
+    &--phone {
+      width: 10px;
+      height: 16px;
+    }
+    &:focus,
+    &:hover {
+      color: $brandColor;
+      fill: $brandColor;
+      transition-duration: $transitionDuration;
+      transition-timing-function: $transitionTimingFunction;
+    }
+  }
+}

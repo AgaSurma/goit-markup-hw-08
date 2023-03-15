@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  color: $primaryColor;
+  font-family: $fontFamily;
+  font-size: 14px;
+  display: block;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+}

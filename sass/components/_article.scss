@@ -1,0 +1,37 @@
+.article {
+  line-height: 1.7;
+  letter-spacing: 0, 03em;
+  color: $secondaryColor;
+  padding: 94px 0px;
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    gap: 30px;
+  }
+  &__card {
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border: 1px solid #f5f4fa;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+  &__header {
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0, 03em;
+    color: $primaryColor;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Homework#5</title>
+  </head>
+  <body>
+    <header class="page-header container">
+      <ul class="page-header__navigation">
+        <li>
+          <a class="logo" href="/"
+            >Web<span class="logo--black">Studio</span>
+          </a>
+        </li>
+        <li class="page-header__item page-header__item--active">
+          <a class="page-header__link" href="index.html">Agencja</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="page-header__item">
+          <a class="page-header__link" href="/"> Kontakt </a>
+        </li>
+      </ul>
+      <ul class="page-header__contact">
+        <li>
+          <a class="page-header__contact-item" href="mailto:info@devstudio.com"
+            ><svg class="page-header__contact-icon">
+              <use
+                href="/goit-markup-hw-04/images/icons.svg#icon-envelope"
+              ></use></svg
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="page-header__contact-item" href="tel:48111111111"
+            ><svg
+              class="page-header__contact-icon page-header__contact-icon--phone"
+            >
+              <use
+                href="/goit-markup-hw-04/images/icons.svg#icon-smartphone"
+              ></use></svg
+            >+48 111 111 111</a
+          >
+        </li>
+      </ul>
+    </header>
+    <main>
+      <section class="main-header">
+        <h1 class="main-header__tekst">
+          EFEKTYWNE ROZWIĄZANIA <br />
+          DLA WASZEGO BIZNESU
+        </h1>
+        <button type="button" class="button" data-modal-open>
+          Zamów usługe
+        </button>
+      </section>
+      <section class="article container">
+        <ul class="article__list">
+          <li>
+            <div class="article__card">
+              <svg class="article__icon">
+                <use
+                  href="/goit-markup-hw-04/images/icons.svg#icon-antenna-1"
+                ></use>
+              </svg>
+            </div>
+            <h3 class="article__header">LOREM IPSUM</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+            arcu sem. Sed non sodales dui. Interdum et malesuada
+          </li>
+          <li>
+            <div class="article__card">
+              <svg class="article__icon">
+                <use
+                  href="/goit-markup-hw-04/images/icons.svg#icon-clock-1"
+                ></use>
+              </svg>
+            </div>
+            <h3 class="article__header">LOREM IPSUM</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+            arcu sem. Sed non sodales dui. Interdum et malesuada
+          </li>
+          <li>
+            <div class="article__card">
+              <svg class="article__icon">
+                <use
+                  href="/goit-markup-hw-04/images/icons.svg#icon-diagram-1"
+                ></use>
+              </svg>
+            </div>
+            <h3 class="article__header">LOREM IPSUM</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+            arcu sem. Sed non sodales dui. Interdum et malesuada
+          </li>
+          <li>
+            <div class="article__card">
+              <svg class="article__icon">
+                <use
+                  href="/goit-markup-hw-04/images/icons.svg#icon-astronaut-1"
+                ></use>
+              </svg>
+            </div>
+            <h3 class="article__header">LOREM IPSUM</h3>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
+            arcu sem. Sed non sodales dui. Interdum et malesuada
+          </li>
+        </ul>
+      </section>
+      <section class="what-we-do container">
+        <h2 class="what-we-do__header">Czym się zajmujemy</h2>
+        <ul class="what-we-do__list">
+          <li class="what-we-do__thumb">
+            <img
+              src="./images/1-1.jpg"
+              alt="Praca nad algrotytmem"
+              width="370"
+              height="294"
+            />
+            <p class="what-we-do__label">Aplikacje komputerowe</p>
+          </li>
+          <li class="what-we-do__thumb">
+            <img
+              src="./images/1-2.jpg"
+              alt="Praca na laptopie"
+              width="370"
+              height="294"
+            />
+            <p class="what-we-do__label">Aplikacje mobilne</p>
+          </li>
+          <li class="what-we-do__thumb">
+            <img
+              src="./images/1-3.jpg"
+              alt="Praca na tablecie"
+              width="370"
+              height="294"
+            />
+            <p class="what-we-do__label">Rozwiązania graficzne</p>
+          </li>
+        </ul>
+      </section>
+      <section class="our-team">
+        <h2 class="our-team__header">Nasz zespół</h2>
+        <div class="container">
+          <ul class="our-team__list">
+            <li class="our-team__card">
+              <img
+                src="./images/2-1.jpg"
+                alt="Mężczyzna w brązaowej koszuli"
+                width="270"
+                height="260"
+              />
+
+              <h3 class="our-team__card-header">John Doe</h3>
+              <p>Product designer</p>
+              <ul class="our-team__social-list">
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-instagram-2"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-twitter-1"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-facebook-1"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-linkedin-1"
+                    ></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="our-team__card">
+              <img
+                src="./images/2-2.jpg"
+                alt="Kobieta, blondynka"
+                width="270"
+                height="260"
+              />
+
+              <h3 class="our-team__card-header">John Doe</h3>
+              <p>Frontend Developer</p>
+              <ul class="our-team__social-list">
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-instagram-2"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-twitter-1"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-facebook-1"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-linkedin-1"
+                    ></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="our-team__card">
+              <img
+                src="./images/2-3.jpg"
+                alt="Mężczyzna w niebieskiej koszuli"
+                width="270"
+                height="260"
+              /><br />
+              <h3 class="our-team__card-header">John Doe</h3>
+              <p>Marketing</p>
+              <ul class="our-team__social-list">
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-instagram-2"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-twitter-1"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-facebook-1"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-linkedin-1"
+                    ></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+            <li class="our-team__card">
+              <img
+                src="./images/2-4.jpg"
+                alt="Mężczyzna w czarnej koszuli"
+                width="270"
+                height="260"
+              />
+              <h3 class="our-team__card-header">John Doe</h3>
+              <p>UI Designer</p>
+              <ul class="our-team__social-list">
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-instagram-2"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-twitter-1"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-facebook-1"
+                    ></use>
+                  </svg>
+                </li>
+                <li class="our-team__social-crew">
+                  <svg class="our-team__social-icon">
+                    <use
+                      href="/goit-markup-hw-04/images/icons.svg#icon-linkedin-1"
+                    ></use>
+                  </svg>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="our-clients container">
+        <h2 class="our-clients__header">Nasi klienci</h2>
+        <ul class="our-clients__list">
+          <li class="our-clients__icon-container">
+            <svg class="our-clients__icon">
+              <use href="/goit-markup-hw-04/images/icons.svg#icon-Logo"></use>
+            </svg>
+          </li>
+          <li class="our-clients__icon-container">
+            <svg class="our-clients__icon">
+              <use href="/goit-markup-hw-04/images/icons.svg#icon-Logo-1"></use>
+            </svg>
+          </li>
+          <li class="our-clients__icon-container">
+            <svg class="our-clients__icon">
+              <use href="/goit-markup-hw-04/images/icons.svg#icon-Logo-2"></use>
+            </svg>
+          </li>
+          <li class="our-clients__icon-container">
+            <svg class="our-clients__icon">
+              <use href="/goit-markup-hw-04/images/icons.svg#icon-Logo-3"></use>
+            </svg>
+          </li>
+          <li class="our-clients__icon-container">
+            <svg class="our-clients__icon">
+              <use href="/goit-markup-hw-04/images/icons.svg#icon-Logo-4"></use>
+            </svg>
+          </li>
+          <li class="our-clients__icon-container">
+            <svg class="our-clients__icon">
+              <use href="/goit-markup-hw-04/images/icons.svg#icon-Logo-5"></use>
+            </svg>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container container">
+        <address class="footer__address-container">
+          <a class="logo" href="/"
+            >Web<span class="logo--white">Studio</span></a
+          >
+          <p class="footer__address">m. Warszawa, Aleje Jerozolimskie 21</p>
+          <a class="footer__contact" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          ><br />
+          <a class="footer__contact" href="tel:48111111111">+48 111 111 111</a>
+        </address>
+        <div class="footer__social">
+          <p class="footer__social-header">Dołącz do nas</p>
+          <ul class="footer__social-list">
+            <li class="footer__social-icon-background">
+              <svg class="footer__social-icon">
+                <use
+                  href="/goit-markup-hw-04/images/icons.svg#icon-instagram-2"
+                ></use>
+              </svg>
+            </li>
+            <li class="footer__social-icon-background">
+              <svg class="footer__social-icon">
+                <use
+                  href="/goit-markup-hw-04/images/icons.svg#icon-twitter-1"
+                ></use>
+              </svg>
+            </li>
+            <li class="footer__social-icon-background">
+              <svg class="footer__social-icon">
+                <use
+                  href="/goit-markup-hw-04/images/icons.svg#icon-facebook-1"
+                ></use>
+              </svg>
+            </li>
+            <li class="footer__social-icon-background">
+              <svg class="footer__social-icon">
+                <use
+                  href="/goit-markup-hw-04/images/icons.svg#icon-linkedin-1"
+                ></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__contact-form">
+          <label>Zapisz się do newslettera</label><br />
+          <input
+            type="text"
+            name="e-mail"
+            placeholder="E-mail"
+            class="footer__contact-email"
+          />
+          <button type="button" class="button footer__button">
+            Zapisz się
+            <svg class="footer__contact-icon">
+              <use
+                href="/goit-markup-hw-06/images/icons.svg#icon-icon-send"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close-button" data-modal-close>
+          <svg class="modal__close-button-icon">
+            <use
+              href="/goit-markup-hw-06/images/icons.svg#icon-close-button"
+            ></use>
+          </svg>
+        </button>
+        <h2 class="modal__header">Zostaw swoje dane w formularzu poniżej</h2>
+        <form class="modal__form">
+          <label class="modal__form-label">
+            <p class="modal__form-text">Imię</p>
+            <input type="text" name="name" class="modal__input-area" />
+            <svg class="modal__form-icon">
+              <use href="/goit-markup-hw-06/images/icons.svg#icon-Person"></use>
+            </svg>
+          </label>
+          <label class="modal__form-label">
+            <p class="modal__form-text">Telefon</p>
+            <input type="phone" name="phone" class="modal__input-area" />
+            <svg class="modal__form-icon">
+              <use href="/goit-markup-hw-06/images/icons.svg#icon-Phone"></use>
+            </svg>
+          </label>
+          <label class="modal__form-label">
+            <p class="modal__form-text">E-mail</p>
+            <input type="email" name="email" class="modal__input-area" />
+            <svg class="modal__form-icon">
+              <use href="/goit-markup-hw-06/images/icons.svg#icon-Mail"></use>
+            </svg>
+          </label>
+          <label>
+            <p class="modal__form-text">Komentarz</p>
+            <textarea
+              name="feedback"
+              rows="6"
+              placeholder="Wprowadź tekst"
+              class="modal__textarea"
+            ></textarea>
+          </label>
+          <label class="modal__checkbox-container">
+            <input type="checkbox" name="policy" class="modal__chceckox" />
+            <span class="modal__chechkmark"></span>
+            <svg class="modal__check-icon">
+              <use href="/goit-markup-hw-06/images/icons.svg#icon-check"></use>
+            </svg>
+            <p class="modal__policy-check">
+              Oświadczam iż akceptuję
+              <span class="modal__policy-check--blue-undertext">Regulamin</span>
+              i
+              <span class="modal__policy-check--blue-undertext"
+                >Politykę Prywatności.</span
+              >
+            </p></label
+          >
+          <button type="submit" class="button modal__button">Wyślij</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

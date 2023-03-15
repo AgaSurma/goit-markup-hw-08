@@ -1,0 +1,103 @@
+.footer {
+  padding: 94px 0px;
+  background-color: #2f303a;
+  font-weight: 400;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__address-container {
+    font-style: normal;
+    line-height: 1.7;
+    color: #ffffff;
+    margin-right: 70px;
+  }
+  &__address {
+    margin: 20px 0px 10px 0px;
+  }
+  &__contact {
+    font-weight: 400;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    &:focus,
+    &:hover {
+      color: $brandColor;
+      cursor: pointer;
+      transition-duration: $transitionDuration;
+      transition-timing-function: $transitionTimingFunction;
+    }
+  }
+  &__social {
+    margin-top: 14px;
+    margin-right: 78px;
+  }
+  &__social-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__social-list {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    padding-bottom: 30px;
+    justify-content: center;
+    margin-top: 14px;
+  }
+  &__social-icon-background {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    &:hover,
+    &:focus {
+      background-color: $brandColor;
+      border: 1px solid $brandColor;
+      cursor: pointer;
+    }
+  }
+  &__social-icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+    align-self: center;
+  }
+  &__contact-form {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 14px;
+  }
+  &__contact-email {
+    padding: 15px;
+    margin-top: 20px;
+    margin-right: 12px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: #2f303a;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__contact-icon {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff;
+    margin-left: 24px;
+  }
+}

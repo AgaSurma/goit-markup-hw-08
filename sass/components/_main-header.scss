@@ -1,0 +1,25 @@
+.main-header {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/goit-markup-hw-04/images/backgroud-img.jpg);
+  padding: 94px 0px;
+  &__tekst {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.34;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+}
