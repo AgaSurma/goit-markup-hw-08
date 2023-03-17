@@ -1,0 +1,95 @@
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .menu__toggle {
+    display: none;
+  }
+}
+.menu {
+  &__toggle {
+    fill: $primaryColor;
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    &:hover .menu__icon {
+      fill: $brandColor;
+    }
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: $primaryColor;
+    &:hover {
+      fill: $brandColor;
+    }
+  }
+  &__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    transform: translateX(100%);
+    transition: $transitionDuration;
+    padding-left: 40px;
+  }
+  &__container.is-open {
+    transform: translateX(0);
+  }
+  &__list {
+    list-style: none;
+    padding-top: 48px;
+  }
+  &__link {
+    display: block;
+    padding-bottom: 36px;
+    color: $primaryColor;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    &:hover {
+      color: $brandColor;
+    }
+  }
+  &__footer {
+    margin-top: 254px;
+    list-style: none;
+  }
+  &__contact {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 32px;
+  }
+  &__contact-link {
+    text-decoration: none;
+    color: $secondaryColor;
+    &--blue {
+      color: $brandColor;
+    }
+  }
+  &__social {
+    margin-top: 64px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(33, 33, 33, 0.2);
+  }
+  &__social-link {
+    text-decoration: none;
+    color: $brandColor;
+    padding-right: 10px;
+  }
+}

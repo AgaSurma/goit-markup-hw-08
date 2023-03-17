@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Homework#8</title>
+  </head>
+  <body>
+    <header class="page-header-mobile">
+      <a class="logo" href="/">Web<span class="logo--black">Studio</span> </a>
+      <div class="page-header__container">
+        <button
+          class="page-header-mobile__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="page-header-mobile__icon">
+            <use
+              href="/goit-markup-hw-08/images/icons.svg#icon-menu-icon"
+            ></use>
+          </svg>
+        </button>
+
+        <ul class="menu">
+          <li><a href="./index.html" class="menu__link">Agnencja</a></li>
+          <li><a href="./portfolio.html" class="menu__link">Portfolio</a></li>
+          <li><a href="" class="menu__link">Kontakt</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="menu__container js-menu-container" id="mobile-menu">
+      <button class="menu__toggle js-close-menu">
+        <svg class="menu__icon">
+          <use href="/goit-markup-hw-08/images/icons.svg#icon-close_24px"></use>
+        </svg>
+      </button>
+      <ul class="menu__list">
+        <li><a href="./index.html" class="menu__link">Agnencja</a></li>
+        <li><a href="./portfolio.html" class="menu__link">Portfolio</a></li>
+        <li><a href="" class="menu__link">Kontakt</a></li>
+      </ul>
+      <ul class="menu__footer">
+        <li class="menu__contact">
+          <a
+            class="menu__contact-link menu__contact-link--blue"
+            href="tel:48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
+        <li class="menu__contact">
+          <a class="menu__contact-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <div class="menu__social">
+        <a class="menu__social-link" href=".">Instagram</a>|
+        <a class="menu__social-link" href=".">Twitter</a>|
+        <a class="menu__social-link" href=".">Favebook</a>|
+        <a class="menu__social-link" href=".">LinkedIn</a>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>

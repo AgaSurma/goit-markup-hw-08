@@ -2,8 +2,11 @@
   border-bottom: 1px solid #ececec;
   display: flex;
   justify-content: space-between;
-  height: 80px;
+  height: 60px;
   position: relative;
+  &__container {
+    display: flex;
+  }
   &__navigation {
     list-style-type: none;
     display: flex;
