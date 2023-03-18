@@ -1,11 +1,8 @@
 .page-header {
-  border-bottom: 1px solid #ececec;
-  display: flex;
-  justify-content: space-between;
-  height: 60px;
   position: relative;
   &__container {
     display: flex;
+    margin: 0 10px;
   }
   &__navigation {
     list-style-type: none;
@@ -38,20 +35,21 @@
     }
   }
   &__contact {
+    display: none;
     align-items: center;
     list-style: none;
     padding: 10px;
-    justify-content: space-between;
+     @include mq(tablet){
+    display: inline;
+  }
+   @include mq(desktop){
     display: flex;
   }
+  }
   &__contact-item {
-    align-items: center;
-    list-style: none;
     padding: 10px;
-    justify-content: space-between;
     color: $secondaryColor;
-    text-decoration: none;
-    margin: 0px 50px;
+
     padding: 10px;
     &:focus,
     &:hover {
@@ -65,15 +63,19 @@
       transition-duration: $transitionDuration;
       transition-timing-function: $transitionTimingFunction;
     }
+    @include mq(desktop){
+    padding-left: 30px;
+    margin: 0;
+  }
   }
   &__contact-icon {
-    width: 16px;
-    height: 12px;
+    width: 14px;
+    height: 10px;
     fill: $secondaryColor;
     margin-right: 10px;
     &--phone {
       width: 10px;
-      height: 16px;
+      height: 14px;
     }
     &:focus,
     &:hover {
@@ -83,4 +85,5 @@
       transition-timing-function: $transitionTimingFunction;
     }
   }
+ 
 }

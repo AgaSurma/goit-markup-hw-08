@@ -1,5 +1,6 @@
 @use "./utils/vars" as *;
 @import "./components/base";
+@import "./utils/mixins";
 @import "./components/logo";
 @import "./components/page-header";
 @import "./components/main-header";
@@ -12,7 +13,7 @@
 @import "./components/modal";
 @import "./components/select-section";
 @import "./components/product";
-@import "./components/mobile-menu";
-@import "./utils/mixins";
+
 @import "./components/page-header-mobile";
+@import "./components/mobile-menu";
 

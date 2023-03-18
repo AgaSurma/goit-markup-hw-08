@@ -1,14 +1,6 @@
-@media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-}
-@media (min-width: 768px) {
-  .menu__toggle {
-    display: none;
-  }
-}
 .menu {
+  display: none;
+  align-items: center;
   &__toggle {
     fill: $primaryColor;
     position: absolute;
@@ -35,8 +27,8 @@
   }
   &__container {
     position: fixed;
-    top: 0;
-    left: 0;
+    // top: 0;
+    // left: 0;
     width: 100vw;
     height: 100vh;
     background-color: white;
@@ -61,6 +53,26 @@
     line-height: 47px;
     &:hover {
       color: $brandColor;
+    }
+    &-tablet{
+      font-size: 14px;
+      color: $primaryColor;
+      padding-left: 30px;
+      position: relative;
+      &:hover{
+        color: $brandColor;
+      }
+      &--active::after {
+      content: "";
+      width: 53px;
+      height: 4px;
+      background: #2196f3;
+      border-radius: 2px;
+      position: absolute;
+      bottom: -22px;
+      left: 30px;
+      display: block;
+    } 
     }
   }
   &__footer {
@@ -91,5 +103,8 @@
     text-decoration: none;
     color: $brandColor;
     padding-right: 10px;
+  }
+  @include mq(tablet){
+    display: flex;
   }
 }
