@@ -1,6 +1,6 @@
 .what-we-do {
   display: none;
-  @include mq(desktop){
+  @include mq(desktop) {
     display: block;
     padding-bottom: 94px;
   }

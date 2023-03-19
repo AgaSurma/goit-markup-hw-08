@@ -23,46 +23,58 @@
   </head>
   <body>
     <header class="page-header-mobile container">
-      <a class="logo logo--header" href="/">Web<span class="logo--black">Studio</span> </a>
-        <button
-          class="page-header-mobile__button js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg class="page-header-mobile__icon">
-            <use
-              href="/goit-markup-hw-08/images/icons.svg#icon-menu-icon"
-            ></use>
-          </svg>
-        </button>
-        <ul class="menu list">
-          <li><a href="./index.html" class="menu__link-tablet menu__link-tablet--active link">Agencja</a></li>
-          <li><a href="./portfolio.html" class="menu__link-tablet link">Portfolio</a></li>
-          <li><a href="" class="menu__link-tablet link">Kontakt</a></li>
-        </ul></div>
-        <div class="page-header__container">
-        <ul class="page-header__contact">
+      <a class="logo logo--header" href="/"
+        >Web<span class="logo--black">Studio</span>
+      </a>
+      <button
+        class="page-header-mobile__button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="page-header-mobile__icon">
+          <use href="/goit-markup-hw-08/images/icons.svg#icon-menu-icon"></use>
+        </svg>
+      </button>
+      <ul class="menu list">
         <li>
-          <a class="page-header__contact-item link" href="mailto:info@devstudio.com"
-            ><svg class="page-header__contact-icon">
-              <use
-                href="/goit-markup-hw-04/images/icons.svg#icon-envelope"
-              ></use></svg
-            >info@devstudio.com</a
+          <a
+            href="./index.html"
+            class="menu__link-tablet menu__link-tablet--active link"
+            >Agencja</a
           >
         </li>
         <li>
-          <a class="page-header__contact-item link" href="tel:48111111111"
-            ><svg
-              class="page-header__contact-icon page-header__contact-icon--phone"
-            >
-              <use
-                href="/goit-markup-hw-04/images/icons.svg#icon-smartphone"
-              ></use></svg
-            >+48 111 111 111</a
+          <a href="./portfolio.html" class="menu__link-tablet link"
+            >Portfolio</a
           >
         </li>
+        <li><a href="" class="menu__link-tablet link">Kontakt</a></li>
       </ul>
+      <div class="page-header__container">
+        <ul class="page-header__contact">
+          <li>
+            <a
+              class="page-header__contact-item link"
+              href="mailto:info@devstudio.com"
+              ><svg class="page-header__contact-icon">
+                <use
+                  href="/goit-markup-hw-04/images/icons.svg#icon-envelope"
+                ></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="page-header__contact-item link" href="tel:48111111111"
+              ><svg
+                class="page-header__contact-icon page-header__contact-icon--phone"
+              >
+                <use
+                  href="/goit-markup-hw-04/images/icons.svg#icon-smartphone"
+                ></use></svg
+              >+48 111 111 111</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <div class="menu__container js-menu-container" id="mobile-menu">
@@ -201,7 +213,7 @@
         </ul>
       </section>
       <section class="our-team container">
-        <div> 
+        <div>
           <h2 class="our-team__header">Nasz zespół</h2>
           <ul class="our-team__list">
             <li class="our-team__card">
@@ -209,6 +221,7 @@
                 src="./images/2-1.jpg"
                 alt="Mężczyzna w brązaowej koszuli"
                 class="our-team__image"
+                srcset="./images/img2x-2-1.jpg 2x"
               />
 
               <h3 class="our-team__card-header">John Doe</h3>
@@ -248,7 +261,8 @@
               <img
                 src="./images/2-2.jpg"
                 alt="Kobieta, blondynka"
-               class="our-team__image"
+                class="our-team__image"
+                srcset="./images/img2x-2-2.jpg 2x"
               />
 
               <h3 class="our-team__card-header">John Doe</h3>
@@ -289,6 +303,7 @@
                 src="./images/2-3.jpg"
                 alt="Mężczyzna w niebieskiej koszuli"
                 class="our-team__image"
+                srcset="./images/img2x-2-1.jpg 2x"
               /><br />
               <h3 class="our-team__card-header">John Doe</h3>
               <p>Marketing</p>
@@ -327,7 +342,8 @@
               <img
                 src="./images/2-4.jpg"
                 alt="Mężczyzna w czarnej koszuli"
-               class="our-team__image"
+                class="our-team__image"
+                srcset="./images/img2x-2-1.jpg 2x"
               />
               <h3 class="our-team__card-header">John Doe</h3>
               <p>UI Designer</p>
@@ -401,7 +417,7 @@
         </ul>
       </section>
     </main>
-<footer class="footer">
+    <footer class="footer">
       <div class="footer__container container">
         <address class="footer__address-container">
           <a class="logo" href="/"
@@ -526,8 +542,5 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-
-
-
   </body>
 </html>

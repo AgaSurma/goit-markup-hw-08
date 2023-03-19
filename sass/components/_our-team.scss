@@ -16,20 +16,20 @@
     justify-content: space-between;
     align-items: center;
     gap: 15px;
-    @include mq(tablet){
+    @include mq(tablet) {
       flex-direction: row;
       flex-wrap: wrap;
     }
   }
- 
+
   &__card {
     width: 450px;
-    @include mq(tablet){
-    width: calc(100%/2.1);
-  }
-  @include mq(desktop){
-    width: calc(100%/4.2);
-  }
+    @include mq(tablet) {
+      width: calc(100% / 2.1);
+    }
+    @include mq(desktop) {
+      width: calc(100% / 4.2);
+    }
     background-color: #ffffff;
     font-size: 16px;
     line-height: 1.2;
@@ -38,7 +38,7 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
   }
-   &__image{
+  &__image {
     width: 100%;
   }
   &__card-header {

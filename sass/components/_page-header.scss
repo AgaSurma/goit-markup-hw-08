@@ -39,12 +39,12 @@
     align-items: center;
     list-style: none;
     padding: 10px;
-     @include mq(tablet){
-    display: inline;
-  }
-   @include mq(desktop){
-    display: flex;
-  }
+    @include mq(tablet) {
+      display: inline;
+    }
+    @include mq(desktop) {
+      display: flex;
+    }
   }
   &__contact-item {
     padding: 10px;
@@ -63,10 +63,10 @@
       transition-duration: $transitionDuration;
       transition-timing-function: $transitionTimingFunction;
     }
-    @include mq(desktop){
-    padding-left: 30px;
-    margin: 0;
-  }
+    @include mq(desktop) {
+      padding-left: 30px;
+      margin: 0;
+    }
   }
   &__contact-icon {
     width: 14px;
@@ -85,5 +85,4 @@
       transition-timing-function: $transitionTimingFunction;
     }
   }
- 
 }

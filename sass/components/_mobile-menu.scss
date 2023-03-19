@@ -55,25 +55,25 @@
     &:hover {
       color: $brandColor;
     }
-    &-tablet{
+    &-tablet {
       font-size: 14px;
       color: $primaryColor;
       padding-left: 30px;
       position: relative;
-      &:hover{
+      &:hover {
         color: $brandColor;
       }
       &--active::after {
-      content: "";
-      width: 53px;
-      height: 4px;
-      background: #2196f3;
-      border-radius: 2px;
-      position: absolute;
-      bottom: -22px;
-      left: 30px;
-      display: block;
-    } 
+        content: "";
+        width: 53px;
+        height: 4px;
+        background: #2196f3;
+        border-radius: 2px;
+        position: absolute;
+        bottom: -22px;
+        left: 30px;
+        display: block;
+      }
     }
   }
   &__footer {
@@ -105,7 +105,7 @@
     color: $brandColor;
     padding-right: 10px;
   }
-  @include mq(tablet){
+  @include mq(tablet) {
     display: flex;
   }
 }
