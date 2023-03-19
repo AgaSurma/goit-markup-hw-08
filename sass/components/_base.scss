@@ -12,8 +12,6 @@ body {
 .container {
   padding: 0 15px;
   margin: 0 auto;
-  min-width: 360px;
-  width: 480px;
 }
 .list {
   list-style: none;
@@ -21,13 +19,18 @@ body {
 .link {
   text-decoration: none;
 }
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
+// @media screen and (min-width: 480px) {
+//   .container {
+//     width: 100%;
+//   }
+// }
+// @media screen and (min-width: 768px) {
+//   .container {
+//     width: 100%;
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   .container {
+//     width: 100%;
+//   }
+// }

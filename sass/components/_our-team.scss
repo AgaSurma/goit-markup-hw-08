@@ -23,7 +23,9 @@
   }
 
   &__card {
-    width: 450px;
+    @media screen and (max-width: 480px) {
+    width: 100%;
+  }
     @include mq(tablet) {
       width: calc(100% / 2.1);
     }
