@@ -1,5 +1,9 @@
 .what-we-do {
-  padding: 94px 0px;
+  display: none;
+  @include mq(desktop){
+    display: block;
+    padding-bottom: 94px;
+  }
   &__header {
     font-weight: 700;
     font-size: 36px;

@@ -1,23 +1,35 @@
 .our-team {
-  padding: 94px 0px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
-
   &__header {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     letter-spacing: 0, 03em;
     text-align: center;
-    margin-bottom: 50px;
+    padding: 30px 0;
   }
   &__list {
     list-style-type: none;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
+    gap: 15px;
+    @include mq(tablet){
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
+ 
   &__card {
+    width: 450px;
+    @include mq(tablet){
+    width: calc(100%/2.1);
+  }
+  @include mq(desktop){
+    width: calc(100%/4.2);
+  }
     background-color: #ffffff;
     font-size: 16px;
     line-height: 1.2;
@@ -25,6 +37,9 @@
     color: $secondaryColor;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+   &__image{
+    width: 100%;
   }
   &__card-header {
     font-weight: 500;

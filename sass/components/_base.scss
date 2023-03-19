@@ -10,15 +10,25 @@ body {
   display: block;
 }
 .container {
-  min-width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  border: 1px solid rgb(226, 11, 11);
-
+  min-width: 360px;
+  width: 480px;
+  
 }
 .list{
   list-style: none;
 }
 .link{
   text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }

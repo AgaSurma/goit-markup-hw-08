@@ -1,5 +1,6 @@
 .our-clients {
-  padding: 94px 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   &__header {
     font-weight: 700;
     font-size: 36px;
@@ -10,11 +11,15 @@
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     margin: 0 auto;
     padding: 0;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 30px;
+    @include mq(desktop){
+      flex-wrap: nowrap;
+    }
   }
   &__icon-container {
     display: flex;

@@ -1,11 +1,13 @@
 $breakpoints: (
   "phone": 480px,
   "tablet": 768px,
-  "desktop": 1200px,
-);
+  "desktop": 1200px
+)!default;
+
 @mixin mq($width){
     $width: map-get($breakpoints, $width);
     @media screen and (min-width: $width){
     @content;
   }
   }
+

@@ -11,6 +11,7 @@
     ),
     url(/goit-markup-hw-04/images/backgroud-img.jpg);
   padding: 94px 0px;
+  background-size: cover;
   &__tekst {
     font-weight: 900;
     font-size: 26px;
@@ -20,5 +21,9 @@
     text-transform: uppercase;
     margin-top: 36px;
     margin-bottom: 36px;
+    @include mq(desktop){
+      font-size: 44px;
+line-height: 60px;
+    }
   }
 }

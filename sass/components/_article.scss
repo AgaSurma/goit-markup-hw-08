@@ -2,17 +2,35 @@
   line-height: 1.7;
   letter-spacing: 0, 03em;
   color: $secondaryColor;
-  padding: 94px 0px;
+  padding: 60px 15px 30px;
+  @include mq(desktop){
+    padding-bottom: 94px;
+  }
   &__list {
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     padding: 0;
     gap: 30px;
+    justify-content: center;
+    align-items: center;
+    @include mq(tablet){
+      display: flex;
+      flex-direction:row;
+      flex-wrap: wrap;
+    }
+  }
+  &__list-item{
+    height: 226px;
+    width: 100%;
+    margin-bottom: 10px;
+    @include mq(tablet){
+      width: calc(100%/2.1);
+    }
+ @include mq(desktop){
+      width: calc(100%/4.4);
+    }
   }
   &__card {
-    width: 270px;
     height: 120px;
     background-color: #f5f4fa;
     border: 1px solid #f5f4fa;
@@ -20,6 +38,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
   &__icon {
     width: 70px;
@@ -31,7 +50,7 @@
     letter-spacing: 0, 03em;
     color: $primaryColor;
     text-transform: uppercase;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin: 16px auto;
+    text-align: center;
   }
 }

@@ -6,10 +6,13 @@
   line-height: 28px;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-right: 93px;
   font-style: normal;
-  margin-top: 16px;
-  margin-left: 15px;
+  &--header {
+    margin-right: 93px;
+    margin-top: 16px;
+    margin-left: 15px;
+  }
+
   &--black {
     color: black;
   }
