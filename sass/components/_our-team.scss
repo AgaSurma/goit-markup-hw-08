@@ -29,7 +29,8 @@
       gap: 30px;
     }
     @include mq(desktop){
-      gap: 15px;
+      gap: auto;
+      flex-wrap: nowrap;
     }
   }
 
