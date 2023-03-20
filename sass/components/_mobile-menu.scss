@@ -70,7 +70,7 @@
       }
       &--active::after {
         content: "";
-        width: 53px;
+        width: 55px;
         height: 4px;
         background: #2196f3;
         border-radius: 2px;
@@ -78,6 +78,9 @@
         bottom: -22px;
         left: 30px;
         display: block;
+        @include mq(desktop){
+          top: 46px;
+        }
       }
     }
   }
