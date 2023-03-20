@@ -28,6 +28,9 @@
       flex-wrap: wrap;
       gap: 30px;
     }
+    @include mq(desktop){
+      gap: 15px;
+    }
   }
 
   &__card {
