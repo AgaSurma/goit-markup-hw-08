@@ -1,6 +1,6 @@
 @use "./utils/vars" as *;
-@import "./components/base";
 @import "./utils/mixins";
+@import "./components/base";
 @import "./components/logo";
 @import "./components/page-header";
 @import "./components/main-header";
