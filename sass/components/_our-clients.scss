@@ -1,6 +1,9 @@
 .our-clients {
   padding-top: 60px;
   padding-bottom: 60px;
+  @include mq(desktop){
+    padding: 94px 0;
+  }
   &__header {
     font-weight: 700;
     font-size: 36px;
@@ -8,6 +11,9 @@
     letter-spacing: 0, 03em;
     text-align: center;
     margin-bottom: 50px;
+    @include mq(desktop){
+    padding-bottom: 50px;
+  }
   }
   &__list {
     display: flex;
