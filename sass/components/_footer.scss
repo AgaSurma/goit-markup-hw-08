@@ -25,6 +25,9 @@
     font-style: normal;
     line-height: 1.7;
     color: #ffffff;
+    @include mq(tablet){
+      width: 300px;
+    }
   }
   &__address {
     margin: 20px 0px 10px 0px;
@@ -47,6 +50,9 @@
     @include mq(tablet) {
       padding-top: 0;
     }
+    @include mq(tablet){
+      width: 300px;
+    }
   }
   &__social-header {
     font-weight: 700;
@@ -63,6 +69,9 @@
     padding-bottom: 30px;
     justify-content: center;
     margin-top: 14px;
+    @include mq(desktop){
+      justify-content: flex-start;
+    }
   }
   &__social-icon-background {
     width: 44px;
@@ -94,13 +103,18 @@
     color: #ffffff;
     margin-top: 14px;
     @include mq(desktop) {
-      margin-top: 0;
+      margin-top: 40px;
+    }
+    @include mq(tablet){
+      max-width: 500px;
+      padding-top: 10px;
     }
   }
   &__contact-email {
     margin-bottom: 20px;
     margin-top: 20px;
-    width: 358px;
+    width: 100%;
+    max-width: 358px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -109,9 +123,11 @@
     padding: 15px;
     @include mq(tablet) {
       display: block;
+      width: 500px;
     }
     @include mq(desktop) {
       display: inline;
+      width: 100%;
     }
   }
   &__button {
