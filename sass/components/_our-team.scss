@@ -1,7 +1,7 @@
 .our-team {
   padding-bottom: 60px;
   background-color: #f5f4fa;
-  @include mq(desktop){
+  @include mq(desktop) {
     padding: 94px 0;
   }
   &__header {
@@ -11,9 +11,9 @@
     letter-spacing: 0, 03em;
     text-align: center;
     padding: 30px 0;
-    @include mq(desktop){
-    padding-bottom: 50px;
-  }
+    @include mq(desktop) {
+      padding-bottom: 50px;
+    }
   }
   &__list {
     list-style-type: none;
@@ -26,14 +26,15 @@
     @include mq(tablet) {
       flex-direction: row;
       flex-wrap: wrap;
+      gap: 30px;
     }
   }
 
   &__card {
     width: 100%;
     @media screen and (max-width: 480px) {
-    width: 100%;
-  }
+      width: 100%;
+    }
     @include mq(tablet) {
       width: calc(100% / 2.1);
     }
